@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "title": "Landing Page Design",
+      "description": "A modern landing page with clean UI/UX layout.",
+      "image": "assets/landing-page.jpeg"
+    },
+    {
+      "title": "Mobile App UI",
+      "description": "UI design for a finance mobile application.",
+      "image": "assets/mobile-ui.png"
+    },
+    {
+      "title": "Admin Dashboard",
+      "description": "A responsive dashboard interface with chart components.",
+      "image": "assets/dashboard.png"
+    }
+  ]
+}

@@ -3,243 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEARSEMIPRO Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Welcome!!</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-      color: #ffffff;
-      line-height: 1.6;
-      overflow-x: hidden;
-      margin: 0;
-      padding: 0;
-    }
-
-    body::before {
-      content: "";
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
-      filter: blur(120px);
-      z-index: -1;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 32px;
-      backdrop-filter: blur(16px);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-weight: 300;
-      font-size: 22px;
-    }
-
-    .logo span {
-      font-weight: 700;
-      color: #6A9955;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #eee;
-      font-size: 15px;
-      transition: 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #6A9955;
-    }
-
-    .content {
-      padding-top: 100px;
-      max-width: 800px;
-      margin: auto;
-      padding: 100px 24px 60px;
-      text-align: center;
-      animation: fadeIn 2s forwards;
-    }
-
-    .content h1 {
-      font-size: 24px;
-      font-weight: 400;
-      margin-bottom: 8px;
-    }
-
-    .content h1 span {
-      color: #6A9955;
-      font-weight: 600;
-    }
-
-    .content h2 {
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .content p {
-      font-size: 16px;
-      max-width: 600px;
-      margin: 0 auto 24px;
-      color: #ccc;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .social-icons a {
-      color: #fff;
-      font-size: 18px;
-      transition: 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      color: #6A9955;
-    }
-
-    /* Contact Us Section */
-    .contact-container {
-      padding: 80px 24px;
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .contact-title h2 {
-      font-size: 32px;
-      color: #6A9955;
-      margin-bottom: 8px;
-    }
-
-    .contact-title p {
-      font-size: 16px;
-      color: #ccc;
-      margin-bottom: 32px;
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 14px 16px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #fff;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      outline: none;
-      border-color: #6A9955;
-      background-color: rgba(255, 255, 255, 0.08);
-    }
-
-    .contact-form button {
-      background-color: #6A9955;
-      color: #fff;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    .contact-form button:hover {
-      background-color: #5a864a;
-    }
-
-    .contact-socials {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    .contact-socials a {
-      display: block;
-      color: #ccc;
-      text-decoration: none;
-      margin-bottom: 8px;
-    }
-
-    .contact-socials a:hover {
-      color: #fff;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-     footer {
-      background-color: #111;
-      color: #ccc;
-      text-align: center;
-      padding: 16px;
-      font-size: 14px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-
-    footer a {
-      color: #6A9955;
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
-
   <div class="navbar">
-    <div class="logo">SEAR<span>SEMIPRO</span></div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
-    </div>
+  <div class="logo">SEAR<span>SEMIPRO</span></div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
   </div>
+  <div class="nav-links" id="navMenu">
+    <a href="#">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</div>
 
   <div class="content">
     <h1>Hello, I'm <span>//Kamolwit Kuersuk</span></h1>
@@ -252,30 +34,27 @@
     </div>
   </div>
 
-  <!-- Contact Section -->
-  <div class="contact-container">
-    <div class="contact-title">
-      <h2>Let’s work together</h2>
-      <p>Have a project or just want to say hi? Drop me a message below.</p>
+  <!-- Portfolio Section -->
+  <section class="portfolio-section" id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <!-- Cards will be populated dynamically -->
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-container" id="contact">
+    <h2>Contact Me</h2>
     <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+      <button type="submit">Send</button>
     </form>
-    <div class="contact-socials">
-      <a href="mailto:sear.kuersuk@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
-      <a href="https://github.com/searsemipro" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://instagram.com/raesem4nym" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    </div>
-  </div>
+  </section>
 
-   <!-- ส่วน Footer ที่ด้านล่างสุด -->
   <footer>
     <p>&copy; 2025 Kamolwit Kuersuk. All Rights Reserved.</p>
     <p>Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
   </footer>
-
 </body>
 </html>

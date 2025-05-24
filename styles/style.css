@@ -1,0 +1,310 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  backdrop-filter: blur(16px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.logo span {
+  font-weight: 700;
+  color: #6A9955;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: 64px; /* ขยับให้เข้าไปใกล้โลโก้ */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6A9955;
+  letter-spacing: 1px;
+}
+
+.content {
+  padding-top: 100px;
+  max-width: 800px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 24px 60px;
+  text-align: center;
+  animation: fadeIn 2s forwards;
+}
+
+.content h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.content h1 span {
+  color: #6A9955;
+  font-weight: 600;
+}
+
+.content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: #ccc;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #6A9955;
+}
+
+/* Contact Us Section */
+.contact-container {
+  padding: 100px 24px 120px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title h2 {
+  font-size: 34px;
+  color: #6A9955;
+  margin-bottom: 12px;
+}
+
+.contact-title p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 36px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 14px 18px; /* กำหนดขนาด padding ให้เหมือนกัน */
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box; /* ป้องกันการแตกต่างของขนาดจาก padding */
+  transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6A9955;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 6px rgba(106, 153, 85, 0.3);
+}
+
+.contact-form button {
+  background-color: #6A9955;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5a864a;
+}
+
+.contact-socials {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.contact-socials a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.contact-socials a:hover {
+  color: #fff;
+}
+
+html {
+  scroll-padding-top: 140px; 
+}
+
+.section-title {
+  text-align: center;
+  margin: 160px 0 8px; 
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px 24px;
+}
+
+.portfolio-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.portfolio-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.portfolio-card h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #6A9955;
+}
+
+.portfolio-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.portfolio-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #6A9955;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.portfolio-card a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #6A9955;
+  text-decoration: none;
+}
