@@ -1,3 +1,8 @@
+/* Reset & Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
@@ -64,14 +69,13 @@ body::before {
 }
 
 .content {
-  padding-top: 100px;
-  max-width: 800px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 100px 24px 60px;
+  margin: 50px auto 0;
+  max-width: 800px;
   text-align: center;
   animation: fadeIn 2s forwards;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .content h1 {
@@ -115,7 +119,6 @@ body::before {
   color: #6A9955;
 }
 
-/* Contact Us Section - แก้ไขให้ responsive */
 .contact-container {
   padding: 100px 24px 120px;
   max-width: 600px;
@@ -149,16 +152,15 @@ body::before {
 .contact-form textarea,
 .contact-form button {
   width: 100%;
-  max-width: 100%;
   padding: 14px 18px;
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff;
   border-radius: 10px;
   font-size: 15px;
-  box-sizing: border-box;
-  transition: all 0.2s ease;
   font-family: inherit;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 .contact-form input:focus,
@@ -206,10 +208,9 @@ body::before {
 }
 
 html {
-  scroll-padding-top: 140px; 
+  scroll-padding-top: 140px;
 }
 
-/* Portfolio Card Section */
 .section-title {
   text-align: center;
   margin: 100px 0 32px;
@@ -222,6 +223,7 @@ html {
   padding: 24px 12px;
   max-width: 1000px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .portfolio-card {
@@ -229,14 +231,14 @@ html {
   border-radius: 8px;
   padding: 12px;
   text-align: center;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .portfolio-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 16px rgba(0,0,0,0.35);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.35);
 }
 
 .portfolio-card img {
@@ -272,12 +274,11 @@ html {
   color: #fff;
 }
 
-/* Responsive Design - แก้ไขเพิ่มเติม */
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 20px;
   }
-  
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -296,28 +297,27 @@ html {
   }
 
   .hamburger {
-    display: block;
-    margin-right: 16px; /* เลื่อน hamburger ออกมาทางซ้าย */
+    display: none !important;
+    margin-right: 16px;
   }
-  
+
   .content {
     padding: 80px 16px 40px;
   }
-  
+
   .content h2 {
     font-size: 28px;
   }
-  
-  /* แก้ไขฟอร์ม Contact สำหรับมือถือ */
+
   .contact-container {
     padding: 80px 16px 100px;
     max-width: 100%;
   }
-  
+
   .contact-title h2 {
     font-size: 28px;
   }
-  
+
   .contact-form input,
   .contact-form textarea,
   .contact-form button {
@@ -326,59 +326,66 @@ html {
   }
 }
 
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 @media (max-width: 480px) {
   .navbar {
     padding: 12px 16px;
   }
-  
+
   .hamburger {
-    margin-right: 28px; /* เลื่อน hamburger ออกมาทางซ้ายสำหรับหน้าจอเล็ก */
+    margin-right: 28px;
   }
-  
+
   .logo {
     font-size: 20px;
   }
-  
+
   .content {
     padding: 70px 12px 30px;
   }
-  
+
   .content h1 {
     font-size: 20px;
   }
-  
+
   .content h2 {
     font-size: 24px;
   }
-  
+
   .content p {
     font-size: 14px;
   }
-  
-  /* แก้ไขฟอร์ม Contact สำหรับหน้าจอเล็กมาก */
+
   .contact-container {
     padding: 60px 12px 80px;
   }
-  
+
   .contact-title h2 {
     font-size: 24px;
   }
-  
+
   .contact-title p {
     font-size: 14px;
   }
-  
+
   .contact-form {
     gap: 16px;
   }
-  
+
   .contact-form input,
   .contact-form textarea,
   .contact-form button {
     padding: 12px 14px;
     font-size: 14px;
   }
-  
+
   .portfolio-card h3 {
     font-size: 14px;
   }
