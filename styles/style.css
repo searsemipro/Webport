@@ -196,60 +196,62 @@ html {
   scroll-padding-top: 140px; 
 }
 
+/* Portfolio Card Section */
 .section-title {
   text-align: center;
-  margin: 160px 0 8px; 
+  margin: 100px 0 32px; /* ปรับใหม่จาก 160px 0 8px */
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  padding: 40px 24px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* เดิม 200px */
+  gap: 16px;
+  padding: 24px 12px;
+  max-width: 1000px; /* เพิ่มให้กำหนดความกว้าง */
+  margin: 0 auto; /* จัดตรงกลาง */
 }
 
 .portfolio-card {
   background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 12px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.06); /* เพิ่ม border subtle */
 }
 
 .portfolio-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 16px rgba(0,0,0,0.35);
 }
 
 .portfolio-card img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .portfolio-card h3 {
-  font-size: 18px;
-  margin: 8px 0;
+  font-size: 15px;
+  margin: 6px 0;
   color: #6A9955;
 }
 
 .portfolio-card p {
-  font-size: 14px;
+  font-size: 12px;
   color: #ccc;
 }
 
 .portfolio-card a {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 10px;
   color: #6A9955;
   text-decoration: none;
   font-weight: 600;
+  font-size: 12px;
 }
 
-.portfolio-card a:hover {
-  text-decoration: underline;
-}
 
 .hamburger {
   display: none;
@@ -280,6 +282,18 @@ html {
     display: block;
   }
 }
+
+@media (max-width: 480px) {
+  .portfolio-card h3 {
+    font-size: 14px;
+  }
+
+  .portfolio-card p,
+  .portfolio-card a {
+    font-size: 11.5px;
+  }
+}
+
 
 
 @keyframes fadeIn {

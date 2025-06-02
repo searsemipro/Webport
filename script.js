@@ -2,23 +2,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   const portfolioItems = [
     {
-      title: "UI Design - App Concept",
+      title: "UI Design - Personal Daylies Task App",
       image: "images/project1.webp",
       description: "A sleek mobile app UI concept for task management.",
       link: "https://www.figma.com/file/yourproject1"
     },
     {
-      title: "Web Design - Landing Page",
+      title: "Minimal Portfolio Web - Landing Page",
       image: "images/project2.webp",
       description: "A modern landing page design for a SaaS product.",
       link: "https://www.figma.com/file/yourproject2"
     },
-    {
-      title: "E-commerce Product Page",
-      image: "images/project3.webp",
-      description: "Responsive and stylish product detail page layout.",
-      link: "https://www.figma.com/file/yourproject3"
-    }
+    // {
+    //   title: "E-commerce Product Page",
+    //   image: "images/project3.webp",
+    //   description: "Responsive and stylish product detail page layout.",
+    //   link: "https://www.figma.com/file/yourproject3"
+    // }
   ];
 
   const portfolioGrid = document.getElementById("portfolioGrid");
