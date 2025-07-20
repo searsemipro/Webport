@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "A modern landing page design for a SaaS product.",
       link: "https://www.figma.com/file/yourproject2"
     },
-    // {
-    //   title: "E-commerce Product Page",
-    //   image: "images/project3.webp",
-    //   description: "Responsive and stylish product detail page layout.",
-    //   link: "https://www.figma.com/file/yourproject3"
-    // }
+    {
+      title: "Wireframe - E-commerce Product",
+      image: "images/project3.webp",
+      description: "Responsive and stylish product detail page layout.",
+      link: "https://www.figma.com/file/yourproject3"
+    }
   ];
 
   const portfolioGrid = document.getElementById("portfolioGrid");
