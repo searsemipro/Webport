@@ -1,19 +1,39 @@
 {
+  "profile": {
+    "name": "Kamolwit Kuersuk",
+    "badge": "Open for freelance projects",
+    "email": ""
+  },
   "projects": [
+    
     {
-      "title": "Landing Page Design",
-      "description": "A modern landing page with clean UI/UX layout.",
-      "image": "assets/landing-page.jpeg"
+      "title": "ROEN Clothing",
+      "type": "Branding Website",
+      "year": "2025",
+      "description": "A responsive branding website with a minimal visual style.",
+      "image": "images/project1.png"
+    },
+  
+    {
+      "placeholder": true
+    }
+  ],
+  "why": [
+    {
+      "title": "Design to code",
+      "text": "I know Flutter and web, so designs ship as built."
     },
     {
-      "title": "Mobile App UI",
-      "description": "UI design for a finance mobile application.",
-      "image": "assets/mobile-ui.png"
+      "title": "Clean and minimal",
+      "text": "Clear hierarchy and generous space, no clutter."
     },
     {
-      "title": "Admin Dashboard",
-      "description": "A responsive dashboard interface with chart components.",
-      "image": "assets/dashboard.png"
+      "title": "Responsive first",
+      "text": "Every layout works from phone to desktop."
+    },
+    {
+      "title": "Clear process",
+      "text": "Wireframe, prototype, handoff, with updates along the way."
     }
   ]
 }
