@@ -23,12 +23,11 @@ h1 span{color:var(--muted)}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}}
 
 .work,.about{padding:80px var(--pad) 0}
-ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:72px 28px}
+ol{list-style:none;margin:0;padding:0;align-items:start;display:grid;grid-template-columns:repeat(2,1fr);gap:72px 28px}
 ol>li:first-child{grid-column:1/-1}
 .item{display:block}
-.shot{position:relative;overflow:hidden;border-radius:22px;background:#17171a;aspect-ratio:4/3}
-li:first-child .shot{aspect-ratio:21/9}
-.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.shot{position:relative;overflow:hidden;border-radius:22px;background:#17171a}
+.shot img{width:100%;height:auto;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
 a.item:hover .shot img{transform:scale(1.04)}
 .go{position:absolute;right:20px;bottom:20px;width:52px;height:52px;border-radius:50%;background:var(--bg);color:var(--ink);display:grid;place-items:center;font-size:20px;opacity:0;transform:translateY(8px);transition:.3s}
 a.item:hover .go,a.item:focus-visible .go{opacity:1;transform:none}
@@ -36,7 +35,7 @@ a.item:hover .go,a.item:focus-visible .go{opacity:1;transform:none}
 .cap h3{font-size:clamp(28px,3.4vw,48px);line-height:1.02}
 .cap p{margin:0;color:var(--muted);max-width:42ch;grid-row:span 2;align-self:center}
 .cap small{font-size:14px;color:var(--muted)}
-.item.soon .shot{background:transparent;border:1.5px dashed #bdb5a5;display:grid;place-items:center;color:var(--muted)}
+.item.soon .shot{aspect-ratio:16/10;background:transparent;border:1.5px dashed #bdb5a5;display:grid;place-items:center;color:var(--muted)}
 .item.soon h3{color:var(--muted)}
 
 #why-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;border-top:1px solid var(--line);padding-top:28px}
@@ -52,7 +51,7 @@ footer h2{font-size:clamp(32px,5vw,64px);line-height:1;max-width:16ch}
 .links{display:flex;gap:20px}.links a:hover{color:var(--ink)}
 
 @media (max-width:820px){
-  ol{grid-template-columns:1fr;gap:48px}li:first-child .shot{aspect-ratio:4/3}
+  ol{grid-template-columns:1fr;gap:48px}
   .cap{grid-template-columns:1fr}.cap p{grid-row:auto}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero>*{animation:none}*{transition:none!important}}

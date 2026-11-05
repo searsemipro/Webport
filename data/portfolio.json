@@ -11,7 +11,15 @@
       "type": "Branding Website",
       "year": "2025",
       "description": "A responsive branding website with a minimal visual style.",
-      "image": "images/project1.png"
+      "image": "images/roen-portfolio-cover-hiend.png"
+    },
+
+    {
+      "title": "Business Core Website",
+      "type": "Business Website",
+      "year": "2025",
+      "description": "A responsive business website with a minimal visual style.",
+      "image": "images/maincore-portfolio-cover.png"
     },
   
     {
